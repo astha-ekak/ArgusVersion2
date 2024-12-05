@@ -1,0 +1,50 @@
+.accessibility-container {
+    max-width: 800px;
+    margin-top: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.6;
+  }
+  
+  .accessibility-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .accessibility-subheading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .accessibility-paragraph {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .accessibility-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .accessibility-container{
+        margin-top: 80px;
+    }
+    .accessibility-heading {
+      font-size: 24px;
+    }
+  
+    .accessibility-subheading {
+      font-size: 20px;
+    }
+  
+    .accessibility-paragraph {
+      font-size: 14px;
+    }
+  }
+  

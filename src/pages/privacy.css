@@ -1,0 +1,89 @@
+.terms-container {
+    text-align: center; /* Center-aligns the heading */
+    padding: 20px; /* Adds some padding to the container */
+    font-family: "Poppins", sans-serif;
+}
+
+.terms-line {
+    border: 0; /* Removes default border */
+    border-top: 2px solid rgb(0, 0, 0); 
+    margin: 20px 0; /* Adds space above and below the line */
+}
+
+.terms-row {
+    display: flex; /* Enables flexbox layout for the row */
+    justify-content: center; /* Centers the columns */
+    padding: 40px;
+    text-align: left;
+}
+
+.terms-column {
+    flex: 1; /* Makes each column take equal space */
+    padding: 0 20px; /* Adds horizontal padding to columns */
+}
+.terms-heading{
+    margin-top: 80px;font-weight: bold;
+}
+.terms-subheading {
+    font-size: 1.8em; /* Adjusts the subheading font size */
+    font-family: 'Familjen Grotesk';
+    font-weight: 500;
+ 
+}
+
+.terms-paragraph {
+    font-size: 0.9rem; /* Adjusts the paragraph font size */
+}
+
+.terms-bold {
+    font-weight: 500; /* Makes the text bold */
+    font-size: 1.3rem; /* Adjusts the font size for the bold text */
+    font-family: "Poppins", sans-serif;
+}
+
+.terms-bold1 {
+    font-weight: 600; /* Makes the text bold */
+    font-size: 1rem; /* Adjusts the font size for the bold text */
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .terms-paragraph {
+        font-size: 0.7em; /* Smaller font size for smaller screens */
+        margin-top: 20px; 
+
+    }
+
+    .terms-paragraph br {
+        display: none; /* Hides <br /> elements on smaller screens */
+    }
+
+    /* Additional styles for responsiveness */
+    .terms-subheading {
+        font-size: 1.5em; /* Smaller subheading size for smaller screens */
+    }
+
+    .terms-bold {
+        font-size: 1rem; /* Smaller bold text for smaller screens */
+        text-align: center;
+    }
+    .terms-bold br {
+        display: flex;
+    }
+    .terms-bold1 {
+        font-size: 0.9rem; /* Smaller bold text for smaller screens */
+    }
+
+    /* Ensures no text overlaps or hides */
+    .terms-row {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .terms-column {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}

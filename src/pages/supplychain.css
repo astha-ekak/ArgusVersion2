@@ -1,0 +1,703 @@
+/* src/pages/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 40px; /* Adjusted padding for the navbar */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Additional padding for the logo area */
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-right: 10px; /* Spacing between the circle and text */
+  }
+  
+  .logo-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between navigation items */
+    margin-right: 20px; /* Add some space between the links and the button */
+  }
+  
+  .navbar-links li {
+    display: inline;
+    position: relative; /* Required for dropdown positioning */
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ccc;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    position: absolute; /* Position relative to the parent li */
+    top: 100%; /* Position below the parent */
+    left: 0; /* Align to the left */
+    background-color: #000; /* Match background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Use flexbox for columns */
+    padding: 2px; /* Padding around the dropdown */
+    visibility: hidden; /* Hide by default, controlled by JS */
+    z-index: 1000; /* Ensure it is on top of other elements */
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-menu {
+    visibility: visible; /* Show dropdown on hover */
+  }
+  
+  /* Column Styles */
+  .dropdown-column {
+    margin-right: 10px; /* Space between columns */
+  }
+  
+  .dropdown-column:last-child {
+    margin-right: 0; /* Remove margin for the last column */
+  }
+  
+  .dropdown-column a {
+    display: block; /* Make links block-level for full-width clickable area */
+    padding: 2px 5px; /* Padding for dropdown links */
+    color: #fff; /* Text color for dropdown links */
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-column a:hover {
+    background-color: #00b4d8; /* Change background on hover */
+  }
+  
+  /* Button Styles */
+  .contact-btn {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0096c7;
+  }
+  
+  
+  
+  
+
+
+  .supply-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+
+.supply-header {
+    padding-left: 60px;
+    padding-right: 60px;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    margin-top: 120px;
+}
+
+.supply-subheading {
+    font-size: 1.3rem;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.supply-title {
+    font-size: 5rem;
+    font-weight: 400;
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.supply-description {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    margin-top: 3rem;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    .supply-header {
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .supply-subheading {
+        font-size: 1.2rem;
+    }
+    .supply-title {
+        font-size: 3.5rem;
+    }
+    .supply-description {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    .supply-header {
+      margin-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .supply-subheading {
+        font-size: 1.1rem;
+    }
+    .supply-title {
+        font-size: 3rem;
+    }
+    .supply-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-top: 1.5rem;
+    }
+    .responsive-br {
+      display: none;
+  }
+
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    
+    .supply-container {
+      
+        padding: 10px;
+        
+    }
+    .supply-header {
+       margin-top: 70px; 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .supply-subheading {
+        font-size: 1rem;
+    }
+    .supply-title {
+        font-size: 1.5rem;
+    }
+    .supply-description {
+        font-size: 0.7rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+       
+    }
+    /* Small screens */
+
+  .responsive-br {
+      display: none;
+  }
+
+
+}
+
+
+
+  .container {
+    display: flex;
+    margin:0;
+    padding:0;
+    font-family: "Poppins",sans-serif;
+    max-width: 100%;
+  }
+  
+  .content {
+    flex: 1;
+    margin-top: 200px;
+   margin-left: 100px;
+   
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .content h4{
+    font-size: 14px;
+  }
+
+
+  .features {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds space for bullets */
+   
+  }
+  .features li {
+    margin-bottom: 5px;
+  }
+  
+  .know-more {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    
+  }
+  
+  .know-more span {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  .image-section {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    /* Adjust font size for tablet screens */
+    h1 {
+      font-size: 22px;
+    }
+    .features li{
+      font-size: 20px;
+    }
+    .content {
+        flex: 1;
+        margin-top: 20px;
+       margin-left: 10px;
+      }
+    
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack content vertically on mobile screens */
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .content {
+      text-align: left;
+      padding: 8px;
+      margin-top: 10px;
+      margin-left: 8px;
+      padding-left: 0px;
+    }
+  
+    .image-section {
+      padding: 10px;
+    }
+  
+    .overlay-box {
+      top: 10px;
+      left: 10px;
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+   
+    .features li{
+      font-size: 16px;
+    }
+    .know-more {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce font sizes on very small screens */
+    .container{
+      padding:5px;
+    }
+    h1 {
+      font-size: 16px;
+    }
+    .content {
+        text-align: left;
+        padding-left: 5px;
+        order:2;
+        margin-top: 20px;
+        
+      }
+      .content h4{
+        font-size: 12px;
+      }
+      .image-section {
+       
+        order:1;
+      }
+  .features li{
+    font-size: 12px;
+  }
+    .know-more span {
+      font-size: 5px;
+    }
+  }  
+  
+
+
+
+  .containerSupply { 
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contentSupply {
+    flex: 1;
+   margin-top: 200px;
+    margin-left: 50px;
+  }
+  
+
+
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .contentSupply h4 {
+    font-size: 14px;
+  }
+  
+  .featuresSupply {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds space for bullets */
+  }
+  
+  .featuresSupply li {
+    margin-bottom: 5px;
+  }
+  
+  .know-more {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .know-more span {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  .image-sectionSupply {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image-sectionSupply img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    /* Adjust font size for tablet screens */
+    h1 {
+      font-size: 22px;
+    }
+    .featuresSupply li {
+      font-size: 20px;
+    }
+    .contentSupply {
+      flex: 1;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack content vertically on mobile screens */
+    .containerSupply {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .contentSupply {
+      text-align: left;
+      padding: 10px;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  
+    .image-sectionSupply {
+      padding: 10px;
+    }
+  
+    .overlay-box {
+      top: 10px;
+      left: 10px;
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .featuresSupply li {
+      font-size: 16px;
+    }
+    .know-more {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce font sizes on very small screens */
+    .containerSupply {
+      padding: 0px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    .contentSupply {
+      text-align: left;
+      order: 2;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .contentSupply h4{
+      font-size: 12px;
+    }
+  
+    .image-sectionSupply {
+      padding: 5px;
+      order: 1;
+    }
+    .featuresSupply li {
+      font-size: 12px;
+    }
+    .know-more span {
+      font-size: 5px;
+    }
+  }
+  
+
+
+ 
+
+
+
+
+
+
+
+/* General styling */
+.App {
+  text-align: center;
+  font-family: "Poppins",sans-serif;
+  color: #060606;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px;
+  margin-top: 20px;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card .icon img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: black;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+/* General styling */
+.app-container {
+  text-align: center;
+  font-family:"Poppins",sans-serif;
+  
+}
+
+/* Header styling */
+.app-header .title {
+  font-size: 5rem;
+  font-weight: 300;
+  color:black;
+  margin-top: 50px;
+  margin-left:70px;
+  
+}
+
+/* Statistics container styling */
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+line-height: 0%;
+}
+
+.statistic-card {
+  text-align: left;
+ 
+}
+
+.statistic-percentage {
+  font-size: 4.4rem;
+  font-weight: 300;
+  color: black;
+}
+
+.card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #00b4d8; 
+  margin: 10px auto;
+}
+
+.statistic-description {
+  font-size: 1.2rem;
+  color:black;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .statistics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-header .title {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+.heading-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 60vh;
+    padding-left: 100px;
+    font-family: "Poppins",sans-serif;
+
+  }
+  
+  .responsive-heading {
+    font-size: 5.3rem; 
+    text-align: left;
+    font-weight: 200; 
+    margin-top:80px;
+    color:rgb(55, 54, 54);
+    line-height: 120%;
+  }
+
+  @media (max-width: 768px) {
+    .responsive-heading {
+      font-size: 1.5rem; 
+      margin-top:20px;
+    }
+    .heading-container{
+        padding-left: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .heading-container{
+        height:20vh;
+    }
+    .responsive-heading {
+      font-size: 1.2rem;
+      margin-top:50px;
+      margin-left: 20px;
+      color: #000;
+    }
+    .heading-container{
+        padding-left: 10px;
+    }
+  }
+  

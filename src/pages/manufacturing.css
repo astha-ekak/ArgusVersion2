@@ -1,0 +1,587 @@
+/* Container Styling */
+.container-mirrored {
+  display: flex;
+  height: 90vh; /* Default height for large screens */
+  background-color: transparent;
+  overflow: hidden;
+  flex-direction: row; /* Default is row for large screens */
+  font-family: "Poppins", sans-serif;
+  margin-top: 68px;
+}
+
+/* Left Column (Image Section) */
+.image-section-mirrored {
+  flex: 1;
+  display: flex;
+}
+
+.image-section-mirrored img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Right Column (Content Section) */
+.content-mirrored {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-align: left;
+}
+
+.content-mirrored h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.content-mirrored h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* "Know More" Button */
+.know-more-btn {
+  padding: 5px 10px;
+  background-color: #f9f6f6;
+  color: #050505;
+  border: none;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #000000;
+  color: #f5f5f5;
+}
+.line {
+  display: block; /* Show each line as a block on larger screens */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 576px) {
+  .container-mirrored {
+      flex-direction: column; /* Stack image and content vertically */
+      height: auto; /* Adjust height to fit content */
+      padding: 10px;
+  }
+
+  /* Image Section Adjustments */
+  .image-section-mirrored img {
+      width: 90%;
+      height: auto; 
+      padding:10px;
+      object-fit: cover;
+  }
+  
+  /* Content Section Adjustments */
+  .content-mirrored {
+      padding: 10px;
+      align-items: flex-start; /* Align text to the left */
+      text-align: left; /* Keep text aligned to the left */
+  }
+
+  .content-mirrored h1 {
+      font-size: 22px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+
+  .content-mirrored h4 {
+      font-size: 12px;
+      font-weight: 300;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  .line {
+    display: inline;
+  }
+
+  /* "Know More" Button Adjustments */
+  .know-more-btn {
+      padding: 5px 10px;
+      font-size: 10px;
+      width: 40%;
+      background-color: #00b4d8;
+      color: #fff;
+  }
+
+  .know-more-btn:hover {
+      background-color: #0096c7;
+  }
+}
+
+
+
+
+
+/* Centered Section Styles */
+.centered-section {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  font-family: "Poppins",sans-serif;
+}
+
+.centered-section h2 {
+  font-size: 54px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.centered-section h6 {
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 30px;
+  color: #090909;
+}
+
+/* Video Container Styles */
+.video-container {
+  width: 100%; /* Full width */
+  display: flex; /* Center the video in the container */
+  justify-content: center; /* Center the video horizontally */
+  overflow: hidden; /* Prevent overflow of video */
+}
+
+/* Responsive Video Styles */
+.video-container iframe {
+  width: 100%; /* Full width of the container */
+  height: 480px; /* Maintain aspect ratio */
+  max-width: 800px; /* Max width for larger screens */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .centered-section h2 {
+    font-size: 28px; /* Adjust title size for medium screens */
+  }
+
+  .centered-section h6 {
+    font-size: 14px; /* Adjust subtitle size for medium screens */
+  }
+  .video-container iframe {
+    max-width: 100%;
+    height: 400px; /* Maintain aspect ratio */
+   
+  }
+}
+
+@media (max-width: 576px) {
+  .centered-section h2 {
+    font-size: 24px; /* Further reduce title size for small screens */
+    margin-top: 0px;
+  }
+
+  .centered-section h6 {
+    font-size: 14px; /* Further reduce subtitle size for small screens */
+    text-align: left;
+    font-weight: 500;
+  }
+  /* Responsive Video Styles */
+.video-container iframe {
+
+  height: 200px; /* Maintain aspect ratio */
+ 
+}
+}
+
+  
+
+
+
+
+
+
+
+
+.app2 {
+  font-family: "Poppins",sans-serif;
+  padding-left:250px;
+  padding-right: 250px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.tabs2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab2 {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.tab2.active2 {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.content2 h2 {
+  font-size: 16px;
+  color: rgb(52, 51, 51);
+  font-weight: 600;
+}
+
+.content2 hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.content2 p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .app2{
+    padding-left:0px;
+  padding-right: 0px;
+  margin-top: 10px;
+  text-align: left;
+  }
+  .tabs2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .active2{
+    align-items: left;
+  }
+  .tab2 {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+   
+  }
+.text-column2{
+  padding:0;
+  margin-right:0px;
+ 
+}
+  .content2 h2 {
+    font-size: 14px;
+    padding:0px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+
+
+  .content2 p {
+    font-size: 12px;
+    
+  }
+  .image-column2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top:15px;
+    margin-left: 20px;
+  }
+  .content2 hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: left;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.text-column2{
+  flex: 1;
+  min-width: 300px;
+  margin-right: 60px;
+  margin-top: 15px;
+  
+}
+.image-column2 {
+  flex: 1;
+ 
+
+}
+.image-column2 img {
+  width: 80%;
+  height: 70%;
+  border-radius: 15px;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  /* General styling */
+.app-container2 {
+  text-align: center;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header styling */
+.app-header2 .title2 {
+  font-size: 3rem;
+ font-weight:lighter;
+  color: black;
+  margin-top: 60px;
+  margin-left: 70px;
+  text-align: left;
+}
+
+/* Statistics container styling */
+.statistics-container2 {
+  display: flex;
+  justify-content: space-around;
+  line-height: 0%;
+}
+
+.statistic-card2 {
+  text-align: left;
+}
+
+.statistic-percentage2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: black;
+}
+
+.card-divider2 {
+  width: 100%;
+  height: 1px;
+  background-color: #00b4d8;
+  margin: 10px auto;
+}
+
+.statistic-description2 {
+  font-size: 1rem;
+  color: black;
+  margin-top:20px;
+}
+.statistic-description21 {
+  font-size: 1rem;
+  color: black;
+  margin-top:60px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .app-container2{
+    padding:0px
+  }
+  .statistics-container2 {
+    flex-direction: column;
+    align-items: left;
+    margin-left:30px
+  }
+
+  .app-header2 .title2 {
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .statistic-description21 {
+    font-size: 0.8rem;
+    color: black;
+    margin-top:40px;
+    margin-left: 20px;
+  }
+  .statistic-description2 {
+    font-size: 0.8rem;
+    color: black;
+    margin-top:20px;
+    margin-left: 20px;
+  }
+  .card-divider2 {
+    width: 90%;
+    height: 1px;
+    background-color: #00b4d8;
+    margin: 10px auto;
+  }
+  .statistic-card2 {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 90px;
+  margin-top: 150px;
+  font-family: "Poppins",sans-serif;
+}
+
+.content3 {
+  max-width: 40%;
+}
+
+.title3 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.connect-button3 {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  border: 2px solid #333;
+  background: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.connect-button3:hover {
+  background-color: #f0f0f0;
+}
+
+.card-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 60%;
+  padding: 30px;
+}
+
+.card3 {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 60px;
+  border-radius: 15px;
+  border: 2px solid rgb(237, 235, 235); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon3 {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.card-title3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333;
+}
+
+/* Adjustments for medium screens */
+@media (max-width: 768px) {
+  .app-container3 {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+  }
+
+  .content3 {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .title3 {
+    font-size: 2.5rem;
+  }
+
+  .card-container3 {
+    grid-template-columns: 1fr; /* Stacks cards vertically */
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .card3 {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .connect-button3 {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+
+  .icon3 {
+    font-size: 1.8rem;
+  }
+
+  .card-title3 {
+    font-size: 1rem;
+  }
+}
+
+/* Further adjustments for small screens */
+@media (max-width: 576px) {
+  .title3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card3 {
+    padding: 35px;
+  }
+
+  .icon3 {
+    font-size: 1.7rem;
+  }
+
+  .card-title3 {
+    font-size: 1rem;
+  }
+  .card-container3 {
+   padding: 5px;
+
+  }
+}      
