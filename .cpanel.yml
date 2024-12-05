@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/ekakivy3/public_html
+    - /bin/cp -R build/* $DEPLOY_PATH
